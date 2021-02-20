@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Disappearing Circle</title>
+    <style type="text/css">
+        #redCircle {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+            float: left;
+            margin: 50px;
+        }
+        #blueCircle {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            border-radius: 50%;
+            float: left;
+            margin: 50px;
+        }
+        #greenCircle {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            border-radius: 50%;
+            float: left;
+            margin: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="redCircle"></div>
+    <div id="blueCircle"></div>
+    <div id="greenCircle"></div>
+<!--
+    <button id="red">Dissapear red</button>
+    <button id="blue">Dissapear blue</button>
+    <button id="green">Dissapear green</button>
+-->
+    <script type="text/javascript">
+        document.getElementById("redCircle").onclick = function(){
+            document.getElementById("redCircle").style.display = "none"
+        }
+    document.getElementById("blueCircle").onclick = function(){
+            document.getElementById("blueCircle").style.display = "none"
+        }
+    document.getElementById("greenCircle").onclick = function(){
+            document.getElementById("greenCircle").style.display = "none"
+        }
+    </script>
+</body>
+
+</html>

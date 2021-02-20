@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <form action="">
+      <p>How Many Fingers Am I Holding Up!:</p>
+      <p>
+        <input type="text" id="enterNumberOfFingers" />
+        <button type="submit" id="enterYourNumber">Enter</button>
+      </p>
+    </form>
+    <script type="text/javascript">
+      document.getElementById("enterYourNumber").onclick = function () {
+        var randomNumber = Math.random();
+        randomNumber = randomNumber * 6;
+        randomNumber = Math.floor(randomNumber);
+        if (
+          document.getElementById("enterNumberOfFingers").value == randomNumber
+        ) {
+          alert("Congo! You Got It Right!" + " It Was " + randomNumber);
+        } else {
+          alert("Try Again!" + " It Was " + randomNumber);
+        }
+      };
+    </script>
+  </body>
+</html>
